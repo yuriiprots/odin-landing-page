@@ -67,7 +67,7 @@ a {
   padding: 100px 0;
 }
 
-img {
+.main_img {
   background-color: #e5e7eb;
   width: 500px;
   height: 230px;
@@ -87,6 +87,7 @@ h2 {
   font-size: 36px;
   font-weight: 800;
   color: #1f2937;
+  text-align: center;
 }
 
 .button {
@@ -98,6 +99,30 @@ h2 {
   color: #f9faf8;
   font-weight: 700;
   font-size: 17px;
+}
+
+.second_container {
+  padding-top: 30px;
+  padding-bottom: 200px;
+}
+
+.cards_container {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 0 20px;
+}
+
+.card {
+  text-align: center;
+  max-width: 155px;
+  max-height: 300px;
+}
+
+.card_img {
+  width: 150px;
+  height: 150px;
+  border: 2px solid blue;
 }
 
 .third_container {
