@@ -8,22 +8,37 @@
   </head>
   <body>
     <header class="header">
-      <a href="#" alt="logo" class="header_logo">Header Logo</a>
-      <nav class="navbar">
-        <a href="#" class="header_link">header link one</a>
-        <a href="#" class="header_link">header link two</a>
-        <a href="#" class="header_link">header link three</a>
-      </nav>
-      <h1>This website is awesome</h1>
-      <p class="main_container_text">
-        This website has some subtext that goes here under the main title. It's
-        a smaller font and the color is lower contrast
-      </p>
-      <button>Sign up</button>
-      <img src="#" alt="this is a placeholder for an image" />
+      <div class="container">
+        <div class="header__top">
+          <a href="#" alt="logo" class="logo">Header Logo</a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">header link one</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">header link two</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">header link three</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        
+        <div class="header__content">
+          <div class="main_container_text">
+            <h1>This website is awesome</h1>
+            <p>
+              This website has some subtext that goes here under the main title.
+              It's a smaller font and the color is lower contrast
+            </p>
+            <button class="button">Sign up</button>
+          </div>
+          <img src="#" alt="this is a placeholder for an image" />
+        </div>
+      </div>
     </header>
-
-    <!-- <div class="main_container"></div> -->
 
     <div class="second_container">
       <h2>Some random information</h2>
