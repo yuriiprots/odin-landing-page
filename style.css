@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap");
 
+/* reset default styles */
 * {
   margin: 0;
   padding: 0;
@@ -14,12 +15,14 @@
   box-sizing: inherit;
 }
 
+/* Body */
 body {
   height: 100%;
   margin: 0 auto;
   background-color: black;
 }
 
+/* Content container */
 .container {
   max-width: 1000px;
   padding: 0 10px;
@@ -34,22 +37,26 @@ body {
   align-items: center;
   z-index: 100;
 }
+
+/* Header top */
 .header__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
 }
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
 .menu__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 0 40px;
-}
-
-.logo {
-  font-size: 24px;
-  color: #f9faf8;
 }
 
 ul {
@@ -60,12 +67,7 @@ a {
   text-decoration: none;
 }
 
-.menu__link,
-.main_container_text {
-  font-size: 18px;
-  color: #e5e7eb;
-}
-
+/* Header content */
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -73,13 +75,13 @@ a {
   padding: 100px 0;
 }
 
-.main_img {
-  background-color: #e5e7eb;
-  width: 500px;
-  height: 230px;
+.menu__link,
+.header__content-text {
+  font-size: 18px;
+  color: #e5e7eb;
 }
 
-.main_container_text {
+.header__content-text {
   width: 465px;
 }
 
@@ -89,6 +91,7 @@ h1 {
   color: #f9faf8;
 }
 
+/* Button */
 .button {
   margin-top: 10px;
   padding: 8px 35px;
@@ -100,14 +103,23 @@ h1 {
   font-size: 17px;
 }
 
-.button:hover{
+.button:hover {
   background-color: #f9faf8;
   border: 1px solid #f9faf8;
   color: #3882f6;
 }
+
+/* Main images */
+.header__content-img {
+  background-color: #e5e7eb;
+  width: 500px;
+  height: 230px;
+}
+
+
 /* Second container */
 
-.second_container {
+.second__container {
   padding-top: 30px;
   padding-bottom: 100px;
   background-color: #f9faf8;
@@ -120,7 +132,7 @@ h2 {
   text-align: center;
 }
 
-.cards_container {
+.cards__container {
   padding-top: 30px;
   display: flex;
   justify-content: center;
@@ -142,7 +154,7 @@ h2 {
 
 /* Third container */
 
-.third_container {
+.third__container {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #e5e7eb;
@@ -167,13 +179,13 @@ h2 {
 
 /* Fourth container */
 
-.fourth_container {
+.fourth__container {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #f9faf8;
 }
 
-.fourth_container_card {
+.fourth__container__content {
   padding: 50px 40px;
   background-color: #3882f6;
   color: #f9faf8;
@@ -188,11 +200,11 @@ h3 {
   color: #f9faf8;
 }
 
-.content_card {
+.fourth__container__card-content {
   color: #e5e7eb;
 }
 
-.fourth_container_card .button {
+.fourth__container__content .button {
   border: 2px solid #e5e7eb;
 }
 
