@@ -19,7 +19,6 @@
 body {
   height: 100%;
   margin: 0 auto;
-  background-color: black;
 }
 
 /* Content container */
@@ -35,7 +34,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
 }
 
 /* Header top */
@@ -111,11 +109,10 @@ h1 {
 
 /* Main images */
 .header__content-img {
-  background-color: #e5e7eb;
-  width: 500px;
-  height: 230px;
+  display: block;
+  width: 70%;
+  height: auto;
 }
-
 
 /* Second container */
 
@@ -217,4 +214,14 @@ h3 {
 .footer__text {
   color: #e5e7eb;
   text-align: center;
+}
+
+@media all and (max-width: 480px) {
+  .header__content {
+    flex-wrap: wrap;
+  }
+
+  .header__content-img {
+    max-width: 100%;
+  }
 }
