@@ -111,7 +111,7 @@ h1 {
 .header__content-img {
   display: block;
   width: 70%;
-  height: auto;
+  height: 250px;
 }
 
 /* Second container */
