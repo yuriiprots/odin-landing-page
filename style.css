@@ -110,8 +110,8 @@ h1 {
 /* Main images */
 .header__content-img {
   display: block;
-  width: 70%;
-  height: 250px;
+  max-width: 500px;
+  height: auto;
 }
 
 /* Second container */
