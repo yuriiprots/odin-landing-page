@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="big_container">
         <div class="header__top">
           <a href="#" alt="logo" class="logo">Header Logo</a>
           <nav class="menu">
@@ -27,73 +27,104 @@
         </div>
         <div class="header__content">
           <div class="header__content-text">
-            <h1>This website is awesome</h1>
+            <h1 class="header__content-title">This website is awesome</h1>
             <p>
               This website has some subtext that goes here under the main title.
-              It's a smaller font and the color is lower contrast
+              It's a smaller font and the color is lower contrast. For example
+              Introducing the reinvention of over-the-ear headphones. From the
+              cushion to the headband, the AirPods Max are designed with
+              acoustic insulation in mind.
             </p>
             <button type="button" class="button">Sign up</button>
           </div>
           <img
-            src="images/office.jpg"
+            src="images/airpods-max-select-silver.png"
             alt="this is a placeholder for an image"
-            class="header__content-img"
+            class="header__content-image"
           />
         </div>
       </div>
     </header>
 
-    <div class="second__container">
-      <div class="container">
-        <h2>Some random information</h2>
-        <div class="cards__container">
-          <div class="card">
-            <img src="images/person_one.jpg" alt="image" class="card_img" />
-            <p>this is some subtext under an illustration or image</p>
-          </div>
-          <div class="card">
-            <img src="images/person_two.jpg" alt="image" class="card_img" />
-            <p>this is some subtext under an illustration or image</p>
-          </div>
-          <div class="card">
-            <img src="images/person_three.jpg" alt="image" class="card_img" />
-            <p>this is some subtext under an illustration or image</p>
-          </div>
-          <div class="card">
-            <img src="images/person_four.jpg" alt="image" class="card_img" />
-            <p>this is some subtext under an illustration or image</p>
+    <main class="main">
+      <section class="get-information">
+        <div class="small_container">
+          <h2 class="get-information__title">Some random information</h2>
+          <div class="get-information__list">
+            <div class="get-information__item">
+              <img
+                src="images/airpods-max-select-blue.png"
+                alt="image"
+                class="get-information__img"
+              />
+              <p class="get-information__text">
+                this is some subtext under an illustration or image
+              </p>
+            </div>
+            <div class="get-information__item">
+              <img
+                src="images/airpods-max-select-green.png"
+                alt="image"
+                class="get-information__img"
+              />
+              <p class="get-information__text">
+                this is some subtext under an illustration or image
+              </p>
+            </div>
+
+            <div class="get-information__item">
+              <img
+                src="images/airpods-max-select-black.png"
+                alt="image"
+                class="get-information__img"
+              />
+              <p class="get-information__text">
+                this is some subtext under an illustration or image
+              </p>
+            </div>
+            <div class="get-information__item">
+              <img
+                src="images/airpods-max-select-red.png"
+                alt="image"
+                class="get-information__img"
+              />
+              <p class="get-information__text">
+                this is some subtext under an illustration or image
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="third__container">
-      <div class="container">
-        <blockquote
-          cite="https://en.wikiquote.org/wiki/Marie_Curie"
-          class="quote"
-        >
-          This is an inspiring quote, or a testimonial from a customer. Maybe
-          it's just filling up space, or maybe people will actually read it. Who
-          knows? All I know is that it looks nice.
-          <footer class="quote__author">-Thor, God of Thunder</footer>
-        </blockquote>
-      </div>
-    </div>
-
-    <div class="fourth__container">
-      <div class="container">
-        <div class="fourth__container__content">
-          <div class="fourth__container__card-content">
-            <h3>Call to action! It's time!</h3>
-            <p>
-              Sign up for our product by clicking that button right over there!
-            </p>
-          </div>
-          <button type="button" class="button">Sign up</button>
+      <section class="quote">
+        <div class="small_container">
+          <blockquote
+            cite="https://en.wikiquote.org/wiki/Marie_Curie"
+            class="quote__block"
+          >
+            This is an inspiring quote, or a testimonial from a customer. Maybe
+            it's just filling up space, or maybe people will actually read it.
+            Who knows? All I know is that it looks nice.
+            <footer class="quote__author">-Thor, God of Thunder</footer>
+          </blockquote>
         </div>
-      </div>
-    </div>
+      </section>
+
+      <section class="call-to-action">
+        <div class="big_container">
+          <div class="call-to-action__content">
+            <div class="call-to-action__text">
+              <h3 class="call-to-action__title">Call to action! It's time!</h3>
+              <p class="call-to-action__paragraph">
+                Sign up for our product by clicking that button right over
+                there!
+              </p>
+            </div>
+            <button type="button" class="button">Sign up</button>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
       <p class="footer__text">Copyright &copy The Odin Project 2023</p>
