@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap");
 
-/* reset default styles */
 * {
   margin: 0;
   padding: 0;
@@ -20,12 +19,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
-
-  /* height: 100%;
-  margin: 0 auto; */
 }
 
-/* Content container */
 .big_container {
   max-width: 1220px;
   padding: 0 10px;
@@ -38,22 +33,14 @@ body {
   margin: 0 auto;
 }
 
-/* Header */
 .header {
   background-color: #1f2937;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* flex-direction: column;
-  position: fixed;
-  top: 0; left: 0;
-  z-index: 1000; */
-
-  /* height: 70vh; */
   padding: 60px 0;
 }
 
-/* Header top */
 .header__top {
   display: flex;
   align-items: center;
@@ -61,7 +48,6 @@ body {
   margin-bottom: 70px;
 }
 
-/* Logo */
 .logo {
   font-size: 24px;
   color: #f9faf8;
@@ -71,7 +57,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0 40px;
+  gap: 0 50px;
   font-weight: 700;
 }
 
@@ -84,23 +70,17 @@ a {
   text-decoration: none;
 }
 
-/* Header content */
 .header__content {
   display: flex;
   justify-content: space-between;
   gap: 150px;
-  /* padding: 100px 0; */
 }
 
 .menu__link,
 .header__content-text {
-  font-size: 18px;
+  font-size: 24px;
   color: #e5e7eb;
 }
-
-/* .header__content-text {
-
-} */
 
 .header__content-title {
   font-size: 48px;
@@ -132,11 +112,6 @@ a {
   display: block;
   max-width: 500px;
   height: auto;
-}
-
-/* Main container */
-
-.main {
 }
 
 /* Get information container */
@@ -223,6 +198,7 @@ a {
 }
 
 .call-to-action__text {
+  font-size: 18px;
   color: #e5e7eb;
 }
 
@@ -249,54 +225,120 @@ a {
 @media (max-width: 1220px) {
 }
 
-@media (max-width: 1000px) {
-  .header__content {
-    flex-wrap: wrap;
-  }
-
-  .header__content-img {
-    max-width: 100%;
-  }
-  .get-information__list {
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 515px) 
-{
+@media (max-width: 820px) {
   .logo {
-    font-size: 18px;
-    color: #f9faf8;
+    font-size: 26px;
   }
 
   .menu__list {
-    gap: 12px;
+    gap: 0 40px;
     font-weight: 400;
   }
 
   .menu__link {
-    font-size: 16px;
-    color: #e5e7eb;
+    font-size: 18px;
   }
 
   .header__content {
     flex-flow: column-reverse wrap;
-    gap: 1px;
+    gap: 0 1px;
   }
 
   .header__content-image {
+    max-width: 100%;
+  }
+
+  .header__content-text {
+    padding-left: 18px;
+    font-size: 18px;
+  }
+
+  .header__content-title {
+    font-size: 42px;
+  }
+
+  .get-information {
+    padding: 30px 0 75px;
+  }
+
+  .get-information__title {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .get-information__list {
+    flex-flow: wrap;
+    gap: 30px 50px;
+  }
+
+  .quote {
+    padding: 75px 0;
+  }
+
+  .quote__block {
+    padding: 0 18px;
+    font-size: 26px;
+  }
+
+  .quote__author {
+    font-size: 20px;
+  }
+
+  .call-to-action {
+    padding: 75px 0;
+  }
+
+  .call-to-action__content {
+    padding: 35px 18px;
     display: block;
-    max-width: 345px;
-    height: auto;
+  }
+
+  .call-to-action__title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .call-to-action__content .button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 515px) {
+  .header__top {
+    gap: 0 8px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .menu__list {
+    gap: 0 8px;
+    font-weight: 400;
+  }
+
+  .menu__link {
+    font-size: 14px;
+  }
+
+  .header__content {
+    flex-flow: column-reverse wrap;
+    gap: 0 1px;
+  }
+
+  .header__content-image {
+    max-width: 100%;
+  }
+
+  .header__content-text {
+    padding-left: 12px;
+    font-size: 18px;
   }
 
   .header__content-title {
     font-size: 36px;
-  }
-
-  .header__content-text {
-    font-size: 18px;
-    color: #e5e7eb;
   }
 
   .get-information {
@@ -305,9 +347,7 @@ a {
 
   .get-information__title {
     font-size: 26px;
-    font-weight: 700;
-    color: #1f2937;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .get-information__text {
@@ -319,6 +359,7 @@ a {
   }
 
   .quote__block {
+    padding: 0 10px;
     font-size: 26px;
   }
 
@@ -333,22 +374,11 @@ a {
   .call-to-action__content {
     padding: 25px 15px;
     display: block;
-    border-radius: 10px;
   }
 
   .call-to-action__title {
     font-size: 24px;
-    font-weight: 700;
-    color: #f9faf8;
     margin-bottom: 15px;
-  }
-
-  .call-to-action__text {
-    color: #e5e7eb;
-  }
-
-  .call-to-action__paragraph {
-    font-size: 18px;
   }
 
   .call-to-action__content .button {
@@ -356,5 +386,4 @@ a {
     margin: 0 auto;
     margin-top: 25px;
   }
-
 }
